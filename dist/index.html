@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#254d45" />
+    <meta
+      name="description"
+      content="An interruption-friendly workspace for students. One clear step, a saved place, an easier return."
+    />
+    <title>NextStep — leave a clear way back</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to workspace</a>
+    <div
+      id="announcer"
+      class="sr-only"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+    <div id="storage-warning" role="alert" hidden></div>
+    <header class="topbar">
+      <a href="./" class="brand" aria-label="NextStep home"
+        ><svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28">
+          <rect x="1" y="1" width="26" height="26" rx="8" fill="currentColor" />
+          <path
+            d="m8 14 4 4 8-9"
+            stroke="#fff"
+            stroke-width="2"
+            fill="none"
+          /></svg
+        >NextStep<span class="wordmark-note">A clearer way back.</span></a
+      >
+      <nav aria-label="Workspace tools">
+        <button id="settings-button" class="quiet">Reading & access</button
+        ><button id="help-button" class="quiet">How it works</button
+        ><button id="backup-button" class="quiet">Backup</button>
+      </nav>
+    </header>
+    <div class="layout">
+      <aside class="rail" aria-label="Projects">
+        <div class="rail-heading">
+          <h2>Your projects</h2>
+          <button
+            id="new-button"
+            class="icon-button"
+            aria-label="Create a project"
+          >
+            +
+          </button>
+        </div>
+        <div id="project-list"></div>
+        <button id="inbox-button" class="rail-link">
+          Quick capture <span id="capture-count">0</span>
+        </button>
+        <div class="rail-footer">
+          <span class="local-dot" aria-hidden="true"></span
+          ><span id="persistence-label">Saved in this browser</span
+          ><button id="demo-button" class="text-button">
+            Try a sample project
+          </button>
+        </div>
+      </aside>
+      <main id="main" tabindex="-1">
+        <div class="workspace-heading">
+          <p class="eyebrow">MAKE ROOM FOR ONE THING</p>
+          <h1 id="workspace-title">Leave yourself a clear next step.</h1>
+          <p id="workspace-description" class="lede">
+            You don't need to hold the whole project in your head.
+          </p>
+        </div>
+        <div id="workspace"></div>
+      </main>
+    </div>
+    <footer class="page-footer">
+      No account. No feed. No streaks to keep.<span
+        >Your work stays on this device. Export a backup to keep it.</span
+      >
+    </footer>
+    <dialog id="project-dialog" aria-labelledby="project-dialog-title">
+      <form id="project-form">
+        <div class="dialog-heading">
+          <p class="eyebrow">A SMALL PLAN, NOT A PERFECT ONE</p>
+          <h2 id="project-dialog-title">Make the first step obvious.</h2>
+        </div>
+        <label for="project-name">What are you working on?</label
+        ><input
+          id="project-name"
+          maxlength="160"
+          required
+          placeholder="e.g. Finish my policy brief"
+        /><label for="project-steps">Break it into concrete steps</label>
+        <p id="steps-hint" class="hint">
+          One action per line. Start with a verb: choose, open, find, write. You
+          can change these later.
+        </p>
+        <textarea
+          id="project-steps"
+          rows="5"
+          required
+          aria-describedby="steps-hint"
+          placeholder="Choose a specific question&#10;Find two sources&#10;Write a rough argument"
+        ></textarea>
+        <p id="project-error" class="error" role="alert"></p>
+        <div class="dialog-actions">
+          <button type="button" data-close class="quiet">Cancel</button
+          ><button class="primary" type="submit">Create my plan</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="checkpoint-dialog" aria-labelledby="checkpoint-title">
+      <form id="checkpoint-form">
+        <p class="eyebrow">BEFORE YOU STEP AWAY</p>
+        <h2 id="checkpoint-title">Leave a breadcrumb for yourself.</h2>
+        <p class="hint">
+          A tiny note now can make returning less confusing. Your timer will
+          pause.
+        </p>
+        <label for="checkpoint-context"
+          >Where did you leave off?
+          <span class="optional">(optional)</span></label
+        ><textarea
+          id="checkpoint-context"
+          rows="3"
+          maxlength="1200"
+          placeholder="Found my two sources. The second one has the useful chart."
+        ></textarea
+        ><label for="checkpoint-next">What is the very next action?</label
+        ><input
+          id="checkpoint-next"
+          required
+          maxlength="500"
+          placeholder="Open the second source and copy its citation"
+        />
+        <p id="checkpoint-error" class="error" role="alert"></p>
+        <div class="dialog-actions">
+          <button type="button" data-close class="quiet">Keep working</button
+          ><button class="primary" type="submit">Save my place</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="settings-dialog" aria-labelledby="settings-title">
+      <h2 id="settings-title">Make this space work for you.</h2>
+      <label class="check-label"
+        ><input id="contrast-toggle" type="checkbox" /> Higher contrast</label
+      ><label class="check-label"
+        ><input id="large-toggle" type="checkbox" /> Larger text</label
+      >
+      <p class="hint">
+        Your browser's text zoom and reduced-motion preferences are respected.
+        All actions work with a keyboard.
+      </p>
+      <div class="dialog-actions">
+        <button data-close class="primary">Done</button>
+      </div>
+    </dialog>
+    <dialog id="help-dialog" aria-labelledby="help-title">
+      <p class="eyebrow">A WORKSPACE THAT EXPECTS INTERRUPTIONS</p>
+      <h2 id="help-title">Small steps. A saved place.</h2>
+      <ol class="help-list">
+        <li>
+          <strong>Make a small plan.</strong> Write a few concrete actions, not
+          a giant list of ambitions.
+        </li>
+        <li>
+          <strong>Focus on one step.</strong> The rest of the plan is still
+          there when you need it.
+        </li>
+        <li>
+          <strong>Save your place before leaving.</strong> Write what you were
+          doing and one exact action to return to.
+        </li>
+        <li>
+          <strong>Come back without a guilt trip.</strong> Your breadcrumb
+          waits, even after a reload.
+        </li>
+      </ol>
+      <p class="hint">
+        Keyboard: <kbd>N</kbd> new plan, <kbd>F</kbd> focus current step,
+        <kbd>Esc</kbd> leave focus. Shortcuts are inactive while typing or using
+        a dialog. The timer is optional and never auto-completes work.
+      </p>
+      <p class="hint">
+        This is a student hackathon prototype, not a medical tool. No
+        productivity outcomes or WCAG conformance have been established by user
+        research.
+      </p>
+      <div class="dialog-actions">
+        <button data-close class="primary">Got it</button>
+      </div>
+    </dialog>
+    <dialog id="backup-dialog" aria-labelledby="backup-title">
+      <h2 id="backup-title">Your work, in your hands.</h2>
+      <p class="hint">
+        This browser stores your projects locally. Clearing site data or
+        switching devices will remove access. Download a JSON backup to keep a
+        copy. It can include personal notes: store it somewhere you trust.
+      </p>
+      <button id="export-button" class="primary">Download backup</button>
+      <hr />
+      <label for="import-file">Restore a NextStep JSON backup</label
+      ><input
+        id="import-file"
+        type="file"
+        accept="application/json,.json"
+      /><label class="check-label"
+        ><input id="replace-confirm" type="checkbox" /> Replace this browser's
+        workspace with the selected backup</label
+      ><button id="import-button" class="secondary">
+        Restore selected backup
+      </button>
+      <p id="backup-result" role="status"></p>
+      <div class="dialog-actions">
+        <button data-close class="quiet">Close</button>
+      </div>
+    </dialog>
+    <dialog id="capture-dialog" aria-labelledby="capture-title">
+      <h2 id="capture-title">Park a thought. Keep your place.</h2>
+      <form id="capture-form">
+        <label for="capture-text">What do you need to remember?</label
+        ><input
+          id="capture-text"
+          required
+          maxlength="500"
+          placeholder="Ask about the submission format"
+        /><button type="submit" class="primary">Save thought</button>
+      </form>
+      <div id="capture-items"></div>
+      <div class="dialog-actions">
+        <button data-close class="quiet">Back to work</button>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+# English demo script
+
+## 1 — The barrier
+“Imagine returning to a course assignment after an interruption. Your checklist still exists, but the context is gone. What were you reading? What should you do next? NextStep is a small workspace designed around that return. Our example student and notes are fictional; this is a working prototype, not a user-study result.”
+
+## 2 — A concrete plan
+“I start with a short plan for a climate policy brief. Each line is a concrete action. Completing one step reveals the next. There is no score, public feed or streak to recover. The plan stays visible when I need an overview, and focus mode removes the surrounding workspace when I want to work on one action.”
+
+## 3 — Save the interruption
+“The timer is optional and never marks work complete. Now I need to leave. I save a small amount of context and one exact next action: open the second source and copy its citation. Saving pauses the timer. This is a breadcrumb attached to the current planned step, rather than another task that might get lost in the list.”
+
+## 4 — Return and recover
+“After a real reload, the return card is still here, with the same context and action. Resume brings that note into focus mode beside the original planned step. The student decides when the planned step is actually complete. The application does not infer completion from a timer or from reading the breadcrumb.”
+
+## 5 — Access and ownership
+“Higher contrast and larger text are available. Labeled native controls, keyboard shortcuts and visible focus support different ways of navigating. Quick capture parks a thought without changing the active step. Work stays in this browser. I can download a JSON backup and restore it only after explicitly confirming replacement. Damaged imports are rejected before changing current work, and stale tabs cannot silently overwrite another tab.”
+
+## 6 — Evidence and limits
+“Twenty automated tests pass. We also verified the primary loop, a real backup download and restore, and keyboard navigation in the browser. The semantic accessibility audit has a defined scope; it does not establish WCAG conformance. We have not measured productivity gains or run a user study. NextStep demonstrates a practical idea: make the next action explicit, preserve its context, and leave a clearer way back.”

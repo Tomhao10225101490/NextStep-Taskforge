@@ -1,0 +1,8 @@
+dist/app.js 60ms
+dist/model.js 10ms
+dist/index.html 23ms
+dist/style.css 38ms
+server.js 2ms
+tests/app.test.js 8ms
+tests/model.test.js 4ms
+package.json 1ms

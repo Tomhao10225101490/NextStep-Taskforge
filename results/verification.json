@@ -1,0 +1,7 @@
+{
+  "node": "v22.23.3",
+  "tests": 20,
+  "ui": "real browser recovery and JSON backup/restore verified",
+  "study": "none",
+  "accessibility": "scoped axe semantic audit, not WCAG certification"
+}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "e53943db-5204-4b6b-a7e5-551ad5b2ae3b",
+      "title": "Finish the climate policy brief",
+      "steps": [
+        {
+          "id": "ca634ab6-b93d-4bcb-ab1e-a80360c2bef2",
+          "text": "Choose one specific policy question",
+          "done": true
+        },
+        {
+          "id": "5779ba37-28c1-4e37-b0dd-12dee23ff317",
+          "text": "Find two credible sources",
+          "done": false
+        },
+        {
+          "id": "f51df186-3b6c-4474-8852-995a7b44d67d",
+          "text": "Write a rough three-paragraph argument",
+          "done": false
+        },
+        {
+          "id": "0f1ba172-a3c6-4fab-a308-5a4d25c6624e",
+          "text": "Check citations and submit",
+          "done": false
+        }
+      ],
+      "checkpoint": {
+        "context": "I found two possible sources. The second has the useful chart.",
+        "nextAction": "Open the second source and copy its citation.",
+        "stepId": "5779ba37-28c1-4e37-b0dd-12dee23ff317",
+        "savedAt": "2026-11-08T06:35:37.215Z"
+      },
+      "timer": {
+        "remaining": 873,
+        "runningSince": null
+      },
+      "createdAt": "2026-11-08T06:34:58.868Z"
+    }
+  ],
+  "activeId": "e53943db-5204-4b6b-a7e5-551ad5b2ae3b",
+  "inbox": [
+    {
+      "id": "0e77a1a4-0666-47ca-9099-2747068c9b7d",
+      "text": "Ask the seminar tutor about the word limit"
+    }
+  ],
+  "preferences": {
+    "contrast": false,
+    "largeText": false
+  },
+  "history": []
+}

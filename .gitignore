@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.openai/*.tar.gz
+.openai/*state*
+demo/audio/
+demo/output/*.wav
+demo/output/qa_*
+.private/
+.cache/
+
+outputs/

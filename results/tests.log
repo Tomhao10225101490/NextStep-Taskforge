@@ -1,0 +1,135 @@
+
+> nextstep-taskforge@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Not implemented: HTMLCanvasElement's getContext() method: without installing the @napi-rs/canvas npm package
+# Subtest: empty workspace does not silently populate fictional user data
+ok 1 - empty workspace does not silently populate fictional user data
+  ---
+  duration_ms: 52.321416
+  type: 'test'
+  ...
+# Subtest: project input is rendered as text, never interpreted as HTML
+ok 2 - project input is rendered as text, never interpreted as HTML
+  ---
+  duration_ms: 20.88675
+  type: 'test'
+  ...
+# Subtest: checkpoint survives reload and resumes with the saved action visible
+ok 3 - checkpoint survives reload and resumes with the saved action visible
+  ---
+  duration_ms: 25.311333
+  type: 'test'
+  ...
+# Subtest: completion has undo and keeps keyboard focus on the next step
+ok 4 - completion has undo and keeps keyboard focus on the next step
+  ---
+  duration_ms: 12.49425
+  type: 'test'
+  ...
+# Subtest: shortcuts do not intercept typing or open dialogs
+ok 5 - shortcuts do not intercept typing or open dialogs
+  ---
+  duration_ms: 16.86925
+  type: 'test'
+  ...
+# Subtest: unreadable stored work is quarantined rather than overwritten
+ok 6 - unreadable stored work is quarantined rather than overwritten
+  ---
+  duration_ms: 7.809042
+  type: 'test'
+  ...
+# Subtest: contrast and reading size preferences persist
+ok 7 - contrast and reading size preferences persist
+  ---
+  duration_ms: 6.636709
+  type: 'test'
+  ...
+# Subtest: static semantic accessibility audit: no axe violations excluding layout-dependent color contrast
+ok 8 - static semantic accessibility audit: no axe violations excluding layout-dependent color contrast
+  ---
+  duration_ms: 93.640375
+  type: 'test'
+  ...
+# Subtest: timer expiration preserves unsaved text and never completes work
+ok 9 - timer expiration preserves unsaved text and never completes work
+  ---
+  duration_ms: 10.118
+  type: 'test'
+  ...
+# Subtest: another tab cannot be silently overwritten by this stale workspace
+ok 10 - another tab cannot be silently overwritten by this stale workspace
+  ---
+  duration_ms: 8.970333
+  type: 'test'
+  ...
+# Subtest: plans retain concrete step order and normalize blanks
+ok 11 - plans retain concrete step order and normalize blanks
+  ---
+  duration_ms: 2.059542
+  type: 'test'
+  ...
+# Subtest: empty or oversized plans are rejected
+ok 12 - empty or oversized plans are rejected
+  ---
+  duration_ms: 0.186667
+  type: 'test'
+  ...
+# Subtest: timer uses elapsed wall clock time across reloads, clamps to zero
+ok 13 - timer uses elapsed wall clock time across reloads, clamps to zero
+  ---
+  duration_ms: 0.057333
+  type: 'test'
+  ...
+# Subtest: pause and resume preserve remaining seconds
+ok 14 - pause and resume preserve remaining seconds
+  ---
+  duration_ms: 0.077084
+  type: 'test'
+  ...
+# Subtest: saving a breadcrumb pauses timer and binds it to the planned step
+ok 15 - saving a breadcrumb pauses timer and binds it to the planned step
+  ---
+  duration_ms: 0.1295
+  type: 'test'
+  ...
+# Subtest: a completed planned step clears its old checkpoint
+ok 16 - a completed planned step clears its old checkpoint
+  ---
+  duration_ms: 0.068792
+  type: 'test'
+  ...
+# Subtest: empty checkpoint actions and completed plans are rejected
+ok 17 - empty checkpoint actions and completed plans are rejected
+  ---
+  duration_ms: 0.123834
+  type: 'test'
+  ...
+# Subtest: backup round trip preserves checkpoints and preferences
+ok 18 - backup round trip preserves checkpoints and preferences
+  ---
+  duration_ms: 0.257042
+  type: 'test'
+  ...
+# Subtest: invalid and malformed backups are rejected before mutation
+ok 19 - invalid and malformed backups are rejected before mutation
+  ---
+  duration_ms: 0.451292
+  type: 'test'
+  ...
+# Subtest: duplicate projects are rejected and unknown fields are not imported
+ok 20 - duplicate projects are rejected and unknown fields are not imported
+  ---
+  duration_ms: 0.328375
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 614.403375
