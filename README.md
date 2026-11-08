@@ -75,6 +75,8 @@ This implementation was created from a new directory during the Taskforge event 
 
 ## Submission materials
 
+**Submitted to Taskforge on 2026-11-08.** [Verified submission receipt](docs/SUBMISSION_RECEIPT.md).
+
 [Watch the 2:25 demo](https://youtu.be/QRoKImiS9F4) · [Download video/captions](https://github.com/Tomhao10225101490/NextStep-Taskforge/releases/tag/demo-v1) · [Devpost project](https://devpost.com/software/nextstep-l1erpi) · [Project story](docs/DEVPOST_SUBMISSION.md) · [Demo script](docs/DEMO_SCRIPT.md) · [Progress](docs/PROGRESS.md).
 
 Taskforge's published submission deadline is November 24, 2026 at 17:00 EST, equivalent to November 25 at 06:00 Asia/Shanghai. See the [official schedule](https://taskforge.devpost.com/details/dates) and [rules](https://taskforge.devpost.com/rules).

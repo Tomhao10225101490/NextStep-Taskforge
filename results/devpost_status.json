@@ -1,0 +1,17 @@
+{
+  "project": "NextStep",
+  "hackathon": "Taskforge",
+  "status": "submitted",
+  "submission_id": "1288187",
+  "project_url": "https://devpost.com/software/nextstep-l1erpi",
+  "verified_at": "2026-11-08T15:05:22.569786+08:00",
+  "observed_signals": [
+    "Project submitted! Continue to edit your project until the hackathon deadline: November 24, 2026 at 05:00pm EST.",
+    "SUBMITTED TO: Taskforge"
+  ],
+  "final_action": "Participant manually accepted terms and clicked Submit project; agent verified native Chrome success page.",
+  "live_site": "https://nextstep-taskforge-2026.electalder.chatgpt.site",
+  "video": "https://youtu.be/QRoKImiS9F4",
+  "source": "https://github.com/Tomhao10225101490/NextStep-Taskforge",
+  "deadline_shanghai": "2026-11-25T06:00:00+08:00"
+}
