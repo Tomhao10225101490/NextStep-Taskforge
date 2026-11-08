@@ -1,0 +1,10 @@
+{
+  "site_url": "https://nextstep-taskforge-2026.electalder.chatgpt.site",
+  "project_id": "appgprj_6af0167279e88191b4bac218942dda54",
+  "first_deployment_id": "appgdep_6af0195ca18c819192627ee11b91f791",
+  "first_deployed_commit": "43bf350864f7cf6124fedaa9680b0427ea07f289",
+  "status": "succeeded",
+  "audience": "public",
+  "public_access_requested_by_user": true,
+  "date_shanghai": "2026-11-08T14:49:26.174428+08:00"
+}

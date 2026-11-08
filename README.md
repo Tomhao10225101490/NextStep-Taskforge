@@ -5,6 +5,8 @@ NextStep is an interruption-friendly student workspace for [Taskforge](https://t
 
 **User and barrier:** a hypothetical university student repeatedly interrupted while preparing coursework. A conventional checklist records what remains but often loses the context of where the student stopped. This prototype focuses on recoverability rather than accumulating more tasks. No user interviews, medical outcomes, measured productivity gains, or accessibility certification are claimed.
 
+[Open the live public app](https://nextstep-taskforge-2026.electalder.chatgpt.site) · [GitHub source](https://github.com/Tomhao10225101490/NextStep-Taskforge)
+
 ## Run it
 
 Node.js 22.23.3 was tested. The application has no runtime packages or API keys.

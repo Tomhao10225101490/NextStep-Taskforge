@@ -1,0 +1,45 @@
+{
+  "duration_seconds": 144.9025625,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 12,
+  "narration": "macOS Daniel synthetic English voice at 165 wpm",
+  "chapters": [
+    {
+      "index": 0,
+      "start": 1.0,
+      "duration": 19.945958333333333
+    },
+    {
+      "index": 1,
+      "start": 22.945958333333333,
+      "duration": 18.9939375
+    },
+    {
+      "index": 2,
+      "start": 43.93989583333334,
+      "duration": 18.843
+    },
+    {
+      "index": 3,
+      "start": 64.78289583333334,
+      "duration": 17.960645833333334
+    },
+    {
+      "index": 4,
+      "start": 84.74354166666667,
+      "duration": 27.353125
+    },
+    {
+      "index": 5,
+      "start": 114.09666666666666,
+      "duration": 27.805895833333334
+    }
+  ],
+  "capture_source": "Actual local Chrome UI; browser chrome and unrelated tabs cropped out.",
+  "editing": "Edited walkthrough with held screenshots, not an uncut continuous recording.",
+  "captions": "English, burned in plus SRT; approximate script-based timing.",
+  "claims": "Fictional student scenario; no real user study, measured productivity gains, or WCAG certification."
+}

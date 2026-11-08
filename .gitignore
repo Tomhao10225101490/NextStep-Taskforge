@@ -9,3 +9,5 @@ demo/output/qa_*
 .cache/
 
 outputs/
+__pycache__/
+*.pyc

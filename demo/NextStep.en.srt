@@ -1,0 +1,119 @@
+1
+00:00:01,000 --> 00:00:04,452
+Imagine returning to a course assignment after an interruption.
+
+2
+00:00:04,452 --> 00:00:07,904
+Your checklist still exists, but the context is gone.
+
+3
+00:00:07,904 --> 00:00:11,357
+What were you reading? What should you do next?
+
+4
+00:00:11,357 --> 00:00:14,809
+NextStep is a small workspace designed around that return.
+
+5
+00:00:14,809 --> 00:00:20,946
+Our example student and notes are fictional; this is a working prototype, not a user-study result.
+
+6
+00:00:22,946 --> 00:00:26,611
+I start with a short plan for a climate policy brief.
+
+7
+00:00:26,611 --> 00:00:30,610
+Each line is a concrete action. Completing one step reveals the next.
+
+8
+00:00:30,610 --> 00:00:33,942
+There is no score, public feed or streak to recover.
+
+9
+00:00:33,942 --> 00:00:40,274
+The plan stays visible when I need an overview, and focus mode removes the surrounding workspace when I want
+
+10
+00:00:40,274 --> 00:00:41,940
+to work on one action.
+
+11
+00:00:43,940 --> 00:00:46,814
+The timer is optional and never marks work complete.
+
+12
+00:00:46,814 --> 00:00:53,840
+Now I need to leave. I save a small amount of context and one exact next action: open the second source and
+
+13
+00:00:53,840 --> 00:00:56,076
+copy its citation. Saving pauses the timer.
+
+14
+00:00:56,076 --> 00:01:02,144
+This is a breadcrumb attached to the current planned step, rather than another task that might get lost in
+
+15
+00:01:02,144 --> 00:01:02,783
+the list.
+
+16
+00:01:04,783 --> 00:01:10,309
+After a real reload, the return card is still here, with the same context and action.
+
+17
+00:01:10,309 --> 00:01:14,454
+Resume brings that note into focus mode beside the original planned step.
+
+18
+00:01:14,454 --> 00:01:17,908
+The student decides when the planned step is actually complete.
+
+19
+00:01:17,908 --> 00:01:22,744
+The application does not infer completion from a timer or from reading the breadcrumb.
+
+20
+00:01:24,744 --> 00:01:27,689
+Higher contrast and larger text are available.
+
+21
+00:01:27,689 --> 00:01:33,160
+Labeled native controls, keyboard shortcuts and visible focus support different ways of navigating.
+
+22
+00:01:33,160 --> 00:01:37,368
+Quick capture parks a thought without changing the active step.
+
+23
+00:01:37,368 --> 00:01:44,943
+Work stays in this browser. I can download a JSON backup and restore it only after explicitly confirming
+
+24
+00:01:44,943 --> 00:01:51,255
+replacement. Damaged imports are rejected before changing current work, and stale tabs cannot silently overwrite
+
+25
+00:01:51,255 --> 00:01:52,097
+another tab.
+
+26
+00:01:54,097 --> 00:02:01,680
+Twenty automated tests pass. We also verified the primary loop, a real backup download and restore, and keyboard
+
+27
+00:02:01,680 --> 00:02:08,842
+navigation in the browser. The semantic accessibility audit has a defined scope; it does not establish WCAG
+
+28
+00:02:08,842 --> 00:02:13,898
+conformance. We have not measured productivity gains or run a user study.
+
+29
+00:02:13,898 --> 00:02:20,639
+NextStep demonstrates a practical idea: make the next action explicit, preserve its context, and leave a
+
+30
+00:02:20,639 --> 00:02:21,903
+clearer way back.
