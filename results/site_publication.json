@@ -6,5 +6,8 @@
   "status": "succeeded",
   "audience": "public",
   "public_access_requested_by_user": true,
-  "date_shanghai": "2026-11-08T14:49:26.174428+08:00"
+  "date_shanghai": "2026-11-08T14:49:26.174428+08:00",
+  "latest_deployment_id": "appgdep_6af01d773ab081919a6d0824f844518b",
+  "latest_deployed_commit": "401046e4d1f822b6fb888bccc7e1197dcfab6f45",
+  "version_number": 2
 }

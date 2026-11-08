@@ -1,0 +1,34 @@
+{
+  "site": {
+    "id": "appgdep_6af01d773ab081919a6d0824f844518b",
+    "project_id": "appgprj_6af0167279e88191b4bac218942dda54",
+    "title": "NextStep — a clearer way back",
+    "version_id": "appgprj_6af0167279e88191b4bac218942dda54~appgver_8b7c7c5e98308191b00864c00379dc6e",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://nextstep-taskforge-2026.electalder.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6af0167279e88191b4bac218942dda54",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-08T06:58:03.596639+00:00"
+  },
+  "version": {
+    "id": "appgprj_6af0167279e88191b4bac218942dda54~appgver_8b7c7c5e98308191b00864c00379dc6e",
+    "project_id": "appgprj_6af0167279e88191b4bac218942dda54",
+    "version_number": 2,
+    "source": {
+      "commit_sha": "401046e4d1f822b6fb888bccc7e1197dcfab6f45"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000ca1c81f5b2cb4997b0c6bca4",
+      "content_hash": "sha256:f6b29da6dd128e6eaf5de057ecec1d5fb6512651d7fda52df8d5d4e3b2053c9f",
+      "size_bytes": 61440,
+      "file_count": 6
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  }
+}

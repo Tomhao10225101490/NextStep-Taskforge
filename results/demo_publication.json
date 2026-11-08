@@ -1,0 +1,13 @@
+{
+  "release_url": "https://github.com/Tomhao10225101490/NextStep-Taskforge/releases/tag/demo-v1",
+  "tag": "demo-v1",
+  "assets": [
+    "https://github.com/Tomhao10225101490/NextStep-Taskforge/releases/download/demo-v1/NextStep-demo.mp4",
+    "https://github.com/Tomhao10225101490/NextStep-Taskforge/releases/download/demo-v1/NextStep.en.srt",
+    "https://github.com/Tomhao10225101490/NextStep-Taskforge/releases/download/demo-v1/thumbnail.png"
+  ],
+  "youtube_url": "https://youtu.be/QRoKImiS9F4",
+  "visibility": "unlisted",
+  "native_chrome_embed_playback": "verified: elapsed 12 seconds of 2:24 with audio-playing state",
+  "youtube_processing": "playable"
+}
